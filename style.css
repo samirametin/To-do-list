@@ -1,1 +1,10 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+head{
+    background-color: #FFDC40;
+    width: 336px;
+    height: 397px;
+}
