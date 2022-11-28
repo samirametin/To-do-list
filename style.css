@@ -7,10 +7,9 @@
 }
 .main{
     width: 336px;
-    height: 397px;
     border: 1px solid #C4C4C4;
     border-radius: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
    
 }
 header{
@@ -22,6 +21,7 @@ header{
 .context{
     padding-left: 28px;
     padding-right: 22px;
+   
 }
 .head h3{
     font-size: 26px;
@@ -39,9 +39,10 @@ header{
 .sort_icon{
     text-align: right;
     height: 39px;
+
 }
 .to_do_list{
-    height: 200px;
+    height: auto;
     width: 286px;
     border-radius: 10px;
     border: 1px solid #C4C4C4;
@@ -51,19 +52,22 @@ header{
     justify-content: space-between;
     
 }
-.task{
+.task , .task1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.task input{
+.task1 input{
     width: 100%;
     border: none;
 }
-.task input:hover{
+.task p{
+    display: inline;
+}
+.task1 input:hover{
     border: 1px solid #C4C4C4;
 }
-.task img{
+.task img, .task1 img{
     
     height: 20px;
     width: 20px;
@@ -71,7 +75,6 @@ header{
 }
 .button{
     position: relative;
-    float: left;
     width: 150px;
     
 }
@@ -92,10 +95,11 @@ header{
     width: 42px;
     border-radius: 50%;
     position: absolute;
-    z-index: 1;
+    display: flex;
+    align-items: center;
+   justify-content: center;
 }
 .plus_item span{
     font-size: 14px;
     color: white;
-    margin: 0 auto;
 }
