@@ -33,8 +33,8 @@
     
     }
 })
-const upSort = document.querySelector(".sort_icon svg:firstChild")
-const downSort = document.querySelector(".sort_icon svg:lastChild")
+const upSort = document.querySelector(".sort_icon svg:first-Child")
+const downSort = document.querySelector(".sort_icon svg:last-Child")
 
 downSort.addEventListener("click",function(){
     this.style.display="none";

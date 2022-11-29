@@ -36,6 +36,9 @@ header{
     height: 15px;
     margin-bottom: 12px;
 }
+.sort_icon svg:hover *{
+    fill: #000;
+}
 .sort_icon{
     text-align: right;
     height: 39px;
@@ -76,8 +79,9 @@ header{
 
 }
 .button{
-    /* position: relative; */
+    position: relative;
     width: 150px;
+    margin: 0 auto;
     margin-bottom: 15px;
     
 }
@@ -93,13 +97,14 @@ header{
   
 }
 .plus_item{
+    top: 0;
     display: none;
     background-color: #9953F1;
     height: 42px;
     width: 42px;
     border-radius: 50%;
-    /* position: absolute; */
-    /* display: flex; */
+    position: absolute;
+    display: flex;
     align-items: center;
    justify-content: center;
 }
