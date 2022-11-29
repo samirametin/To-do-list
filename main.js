@@ -1,7 +1,8 @@
  let button=document.querySelector(".addbtn");
  let i=0;
  let task1=document.querySelector(".task1");
- const texts=[];
+ let texts=[];
+ let pElements=[];
  button.addEventListener("click",function(){
     if (i<5){
     let inputText=document.querySelector("input");
@@ -24,8 +25,18 @@
         task1.style.display="flex"
     }
     texts.push(pFile.innerText)
+    pElements.push(pFile)
     
 }
+})
+let sortImg=document.querySelector(".sort");
+sortImg.addEventListener("click",function(e){
+    
+    for(j=0;j<texts.length;j++){
+
+        pElements[j].innerText=texts[j];
+        
+    }
 })
 // let remove=document.querySelector(".remove")
 // remove.addEventListener("click",function(e){
@@ -33,4 +44,5 @@
 //     let mustRemove=removeImage.parentElement;
 //     mustRemove.remove();
 // })
-console.log(texts.sort((a,b)=>{a>b}))
+console.log(texts);
+console.log(pElements);
