@@ -33,3 +33,25 @@
     
     }
 })
+const upSort=document.querySelector(".sort-icon svg:firstChild")
+const downSort=document.querySelector(".sort-icon svg:lastChild")
+
+downSort.addEventListener("click",function(){
+    this.style.display="none";
+    upSort.style.display = "inline";
+    const taskp=[...document.querySelectorAll(".task")];
+    taskp.sort((a,b)=>{
+      return  parseInt(b.innerText) - parseInt(a.innerText);
+    })
+    tasks.replaceChildren(...tasks.children, ...taskp)
+})
+
+upSort.addEventListener("click",function(){
+    this.style.display="none";
+    downSort.style.display = "inline";
+    const taskp=[...document.querySelectorAll(".task")];
+    taskp.sort((a,b)=>{
+      return  parseInt(a.innerText) - parseInt(b.innerText);
+    })
+    tasks.replaceChildren(...tasks.children, ...taskp)
+})
