@@ -19,7 +19,7 @@
     img.setAttribute("src","/img/Group 77.jpg")
     img.classList.add("remove")
     let remove=document.querySelectorAll(".remove")
-    
+
     remove.forEach(element=> element.addEventListener("click",function(e){
         let removeImage=e.target;
         let mustRemove=removeImage.parentElement;
