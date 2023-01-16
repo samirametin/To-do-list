@@ -4,6 +4,7 @@
  let tasks=document.querySelector(".tasks")
  let texts=[];
  let pElements=[];
+
  button.addEventListener("click",function(){
     if (i<5){
     let inputText=document.querySelector("input");
@@ -18,6 +19,7 @@
     img.setAttribute("src","/img/Group 77.jpg")
     img.classList.add("remove")
     let remove=document.querySelectorAll(".remove")
+    
     remove.forEach(element=> element.addEventListener("click",function(e){
         let removeImage=e.target;
         let mustRemove=removeImage.parentElement;
